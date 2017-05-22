@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "http: //adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Adaptive Card sample",
+      "size": "large",
+      "weight": "bolder"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "test",
+      "style": "expanded",
+      "isMultiSelect": "true",
+      "choices": [
+        {
+          "title": "choice 1",
+          "value": "choice 1"
+        },
+        {
+          "title": "choice 2",
+          "value": "choice 2"
+        },
+        {
+          "title": "choice 3",
+          "value": "choice 3"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ]
+}
